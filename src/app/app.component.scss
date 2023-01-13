@@ -1,0 +1,94 @@
+.form-container {
+  width: 25%; /* decrease the width of the form container */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  background-image: linear-gradient(to right, #56ccf2, #2f80ed);
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: white;
+}
+
+.form-control {
+  height: 8px;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-control:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+
+.form-group label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #2f80ed;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #56ccf2;
+}
+
+.table-container {
+  width: 75%; /* increase the width of the table container */
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.table-row {
+  color: black;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-row:hover {
+  background-color: #f1f1f1;
+}
+
+.table-row td {
+  padding: 15px;
+  font-size: 16px;
+}
+
+.table-container th {
+  background-color: #6c757d;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table-container tbody {
+  background-color: transparent;
+}

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -21,8 +21,8 @@ export class AppComponent implements OnInit {
   ) { }
 
   userForm = this.fb.group({
-    firstName: [''],
-    lastName: [''],
+    firstName: ['', Validators.required],
+    lastName: ['', Validators.required],
   });
 
   ngOnInit(): void {
@@ -30,6 +30,9 @@ export class AppComponent implements OnInit {
   }
 
   save() {
+    if (this.userForm.invalid) {
+      return;
+    }
     this.http.post(this.apiUrl + 'save', this.userForm.value).subscribe(savedUser => {
       this.getUsers();
     });
