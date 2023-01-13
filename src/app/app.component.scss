@@ -1,25 +1,36 @@
-.form-container {
-  width: 25%; /* decrease the width of the form container */
+.form-container,
+.table-container {
+  width: 25%;
   margin: 50px auto;
   padding: 30px;
-  background-color: #fff; /* keep the white background color for contrast */
+  background-color: #fff;
   border-radius: 25px;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+
+.form-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 10px #cccccc; /* change the pink color to gray */
+}
+
+.form-group,
+.form-control,
+.btn-primary {
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
 .form-group {
-  width: 100%;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: auto;
-  color: #6e45e2; /* use the dark purple for text */
+  color: #6e45e2;
 }
 
 .form-control {
@@ -29,14 +40,11 @@
   background-color: #fff;
   padding: 15px;
   font-size: 16px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-  width: 100%;
-  box-shadow: 0px 0px 10px #cccccc; /* change the pink color to gray */
+  box-shadow: 0px 0px 10px #cccccc;
 }
 
 .form-control:hover {
-  box-shadow: 0px 0px 10px #cccccc; /* change the pink color to gray */
+  box-shadow: 0px 0px 10px #cccccc;
 }
 
 .form-group label {
@@ -46,52 +54,65 @@
 }
 
 .btn-primary {
-  background-color: #6e45e2; /* keep the button color the same to match the theme */
+  background-color: #6e45e2;
   color: #fff;
   border: none;
   border-radius: 25px;
   padding: 15px 40px;
   font-size: 18px;
   margin-top: 20px;
-  transition: all 0.3s ease;
-  width: 100%;
 }
 
 .btn-primary:hover {
-  background-color: #b8b5b5; /* change the button hover color to match the theme */
+  background-color: #b8b5b5;
 }
 
 .table-container {
-  width: 75%; /* increase the width of the table container */
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #fff; /* keep the white background color for contrast */
-  border-radius: 25px;
-  box-shadow: 0px 0px 10px #cccccc; /* change the pink color to gray */
+  width: 75%;
+}
+
+.table-row,
+.table-container th {
+  padding: 15px;
+  font-size: 18px;
 }
 
 .table-row {
-  color: #6e45e2; /* use the dark purple for text */
+  color: #6e45e2;
+  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }
 
 .table-row:hover {
-  background-color: #f5f5f5; /* use the gray color for hover effect */
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-.table-row td {
-  padding: 15px;
-  font-size: 16px;
+.table-row:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-row.selected {
+  background-color: #d9edf7;
 }
 
 .table-container th {
-  background-color: #6e45e2; /* keep the background color the same to match the theme */
+  background-color: #6e45e2;
   color: white;
-  padding: 15px;
-  font-size: 18px;
   font-weight: bold;
 }
 
 .table-container tbody {
   background-color: transparent;
+}
+
+/* Add font-weight */
+.table-row td {
+  font-weight: bold;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 10px;
 }
